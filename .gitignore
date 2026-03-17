@@ -1,0 +1,11 @@
+.env
+database/
+redis/
+var/
+var-lib/
+var-log/
+logs/
+certs/
+etc/config.yml
+*.tar.gz
+*.zip

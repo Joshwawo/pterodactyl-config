@@ -1,0 +1,4 @@
+FROM ghcr.io/pterodactyl/panel:latest
+RUN apk add --no-cache mariadb-client \
+ && printf '#!/bin/sh\nexec /usr/bin/mariadb --skip-ssl "$@"\n' > /usr/local/bin/mysql \
+ && chmod +x /usr/local/bin/mysql
